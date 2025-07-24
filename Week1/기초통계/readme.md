@@ -17,7 +17,7 @@
 1. Independence
 2. Identical Distribution
 3. Sample Size : 일반적으로 n $\ge$ 30
-4. Finite Variance : 무한한 분산은 데이터가 퍼져 의미 해석력이 떨ㅇ짐
+4. Finite Variance : 무한한 분산은 데이터가 퍼져 의미 해석력이 떨어짐
 5. 표본 크기와 모집단 비율 : 모집단이 유한한 경우 표본크기 <= 모집단 크기 10%
 
 ---
