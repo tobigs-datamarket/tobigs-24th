@@ -1,3 +1,7 @@
+# 기초통계
+
+---
+
 ## CLT(Central Limit Theorem)
 
 [정의]
@@ -15,6 +19,8 @@
 3. Sample Size : 일반적으로 n $\ge$ 30
 4. Finite Variance : 무한한 분산은 데이터가 퍼져 의미 해석력이 떨ㅇ짐
 5. 표본 크기와 모집단 비율 : 모집단이 유한한 경우 표본크기 <= 모집단 크기 10%
+
+---
 
 ## Bayes' Theorem
 
@@ -34,6 +40,8 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 사전 확률을 어떠한 처리를 통해 사후 확률 계산 가능 $\rightarrow$ 점진적 업데이트 가능 = 전체 데이터를 다시 학습하지 않고도 예측력 유지 가능
 
 사용 예시) MAP, BIC 계산 가능, Naive Bayes 분류기
+
+---
 
 ## 가설 검정
 
@@ -78,11 +86,13 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 2. p값 0.03 = 귀무가설 틀릴 확률이 3%?
    > (X) $P(데이터|H_0가\ 참) \neq P(H_0가\ 틀림|데이터)$
 
-## A/B test
+### A/B test
 
 [정의]
 
 통제군과 처치군의 반응 차이를 비교해 처치 효과를 추정하는 실험 설계 방법
+
+---
 
 ## MLE와 MAP
 
@@ -114,5 +124,29 @@ $\hat\theta_{MLE} = argmax_{\theta}\sum_{i=1}^nlogp(x_i|\theta)$
 
 [기본 형태]
 
-$\theta_{MAP} = argmax_{\theta}p(\theta|X) = argmax_{\theta}p(X|\theta)p(\theta)$
+$\theta_{MAP} = argmax_{\theta}p(\theta|X) = argmax_{\theta}p(X|\theta)p(\theta)$ $\leftarrow$ 정규화 상수($p(X)$) 없음 : $\theta$ 미분 과정에서 탈락됨
+
+* $p(\theta|X) = \frac{p(X|\theta)p(\theta)}{p(X)}$
+
+딥러닝에서의 목표 : $\hat\theta = argmin_{\theta} Loss(\theta)$
+
+> 파라미터를 찾는 손실함수를 정의할 때 사용됨
+
+> MAP&MLE 최대화를 하는 파라미터, Loss는 최소화 대상이므로 **마이너스 부호** 취해 사용
+
+---
+
+## 회귀분석 기초
+
+### 단순회귀분석(SLR)
+
+$$y=\beta_0+\beta_1x=u$$
+
+독립변수가 종속변수에 대해 선형적인 영향을 미친다는 가정하에 세워진 모델
+
+* OLS 회귀 모형
+
+  $\hat Y_i=\hat\beta_0+\hat\beta_1X_i$
+
+  오차의 제곱합을 최소로 만드는 것을 기준으로 계수를 결정하는 모형
 
