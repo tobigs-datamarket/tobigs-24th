@@ -112,7 +112,7 @@ $\hat\theta_{MLE} = argmax_{\theta}p(X|\theta) = argmax_{\theta}\prod_{i=1}^{n}p
 
 미분과 최적화를 더 쉽게 하기 위해 로그를 취함(확률 값이 0~1 사이라서 데이터가 커질수록 기본 형태 값이 작아질 수 있음)
 
-$\hat\theta_{MLE} = argmax_{\theta}\sum_{i=1}^nlogp(x_i|\theta)$
+$\hat\theta_{MLE} = argmax_{\theta}\displaystyle\sum_{i=1}^nlogp(x_i|\theta)$
 
 **사전정보를 사용하지 않고 오직 관측된 데이터에 기반하여 계산됨**
 
@@ -200,7 +200,7 @@ $$y=\beta_0+\beta_1x=u$$
 
 ### MSE
 
-$$MSE = \frac{1}{n}\sum_{i=1}^n(y_i-\hat y_i)^2$$
+$$MSE = \frac{1}{n}\displaystyle\sum_{i=1}^n(y_i-\hat y_i)^2$$
 
 오차를 제곱하여 평균 낸 값
 
@@ -210,7 +210,7 @@ RMSE : MSE에 루트 씌운 값, 기존 y와 단위가 같아져 직관적 해�
 
 ### MAE
 
-$$MAE = \frac{1}{n}\sum_{i=1}^n|y_i-\hat y_i|^2$$
+$$MAE = \frac{1}{n}\displaystyle\sum_{i=1}^n|y_i-\hat y_i|^2$$
 
 오차에 절댓값을 평균낸 값
 
