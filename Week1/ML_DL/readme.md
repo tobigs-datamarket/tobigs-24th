@@ -209,3 +209,5 @@ ex) 얇은 신경망, DNN, CNN, RNN, Transformer 등
 은닉층이 2개 이상인 ANN뉴런(노드)들이 서로 연결되어 정보를 전달, 처리함
 
 보통 Fully Connected(FC) Layer 중심으로 구성됨
+
+### 퍼셉트론
