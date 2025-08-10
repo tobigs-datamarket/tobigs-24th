@@ -8,9 +8,9 @@
 __pycache__/
 *.pyc
 
-# Jupyter
+# Jupyter Notebook
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
 # VSCode
 .vscode/
-
